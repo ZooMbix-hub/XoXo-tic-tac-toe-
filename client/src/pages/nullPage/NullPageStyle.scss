@@ -1,0 +1,28 @@
+.nullPage {
+
+}
+
+.nullPage-container {   
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        width: 350px;
+        height: 350px;
+    }
+    #null-title {
+        font-size: 29px;
+        margin: 20px 0;
+    }
+    #null-ref {
+        font-size: 18px;
+        span {
+            cursor: pointer;
+            color:#60C2AA;
+            text-decoration: underline;
+        }
+    }
+}

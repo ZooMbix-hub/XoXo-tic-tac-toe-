@@ -1,0 +1,24 @@
+@mixin font($size, $lHeight) {
+    font-size: $size;
+    line-height: $lHeight;
+}
+
+@media (max-width: 426px) {  
+    .modalAddFr {
+        z-index: 11;
+    }
+    .modalAddFr-Active {
+        padding: 12px;
+    }
+    .title-modalAddFr {
+        @include font(20px, 24px);
+        text-align: center;
+        margin: 20px 0;
+    }
+    
+    .form-addFr {
+        label {
+            @include font(14px, 20px);
+        }
+    }
+}

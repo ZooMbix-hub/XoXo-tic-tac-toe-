@@ -1,0 +1,46 @@
+@media (max-width: 1024px) { 
+    .rating {
+        padding: 0px 0px;
+    }
+    .container-rating {
+        width: 100%;
+        padding: 32px 12px;
+        border-radius: 0px;
+        box-shadow: none;
+    }
+    .player-rating {
+        li {
+            margin-right: 15px;
+            &:last-child {
+                margin-right: 0px;
+            }
+        }
+    }
+    .name-rating {
+        width: 240px;
+    }
+    .coutGames-rating, .coutWin-rating, .coutLos-rating {
+        width: 92px;
+    }
+    .procWin-rating {
+        width: 120px;
+    }
+}
+
+@media (max-width: 426px) { 
+    .list-rating {
+        overflow-x: scroll;
+        ul {
+            width: 576px; /* !!! */
+        }
+    }
+    .coutWin-rating, .coutGames-rating{
+        min-width: 80px;
+    }
+    .coutLos-rating {
+        min-width: 100px;
+    }
+    .name-rating, .procWin-rating {
+        min-width: 120px;
+    }
+}

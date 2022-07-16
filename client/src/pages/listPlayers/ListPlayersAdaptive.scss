@@ -1,0 +1,55 @@
+@media (max-width: 1170px) { 
+    .name-playerList {
+        width: 150px;
+        margin-right: 20px;
+    }
+    .status-playerList, .dateCreate-playerList, .dateEdit-playerList {
+        width: 120px;
+    }
+}
+
+@media (max-width: 974px) { 
+    .listPlayers {
+        padding: 0px 0px;
+    }
+    .container-listPlayers {
+        border-radius: 0px;
+        width: 100%;
+        padding: 32px 12px 20px;
+    }
+    .btnAdd-listPlayers {
+        font-size: 14px;
+        line-height: 20px;
+        padding: 8px 16px;
+    }
+
+    .list-listPlayers {
+        overflow-x: scroll;
+        ul {
+            align-items: flex-start;
+            min-width: 100%;
+            width: 900px; /* !!! */
+            li {
+                width: auto;
+            }
+        }
+    }
+
+    .name-playerList {
+        min-width: 180px;
+        margin-right: 15px;
+    }
+    .age-playerList {
+        min-width: 70px;
+    }
+    .gender-playerList {
+        min-width: 46px;
+    }
+    .dateCreate-playerList, .dateEdit-playerList {
+        min-width: 120px;
+    }
+    .status-playerList {
+        min-width: 136px;
+        margin: 0 15px;
+    }
+}

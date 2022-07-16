@@ -1,0 +1,77 @@
+@media (max-width: 857px) { 
+    .activePlayers {
+        padding: 30px 15px;
+    }
+    .activePlayers-container {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 720px) { 
+    .activePlayers {
+        padding: 0px 0px;
+    }
+    .activePlayers-container {
+        width: 100%;
+        border-radius: 0px;
+        padding: 32px 12px;
+    }
+    .activePlayers-header {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 12px;
+    }
+    .activePlayers-header-container {
+        align-self: flex-end;
+        margin-top: 12px;
+        p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+    .activePlayer {
+        li {
+            margin-right: 8px;
+            &:last-child {
+                margin-right: 0px;
+            }
+        }
+    }
+    .name-activePlayer {
+        line-height: 20px;
+        font-size: 14px;
+        width: 240px;
+    }
+    .status-activePlayer {
+        font-size: 12px;
+        line-height: 16px;
+        width: 100px;
+        padding: 4px;
+    }
+    .btnInvite-activePlayer {
+        font-size: 14px;
+        line-height: 20px;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 560px) { 
+    .name-activePlayer {
+        width: 140px;
+    }
+    .btnInvite-activePlayer {
+        min-width: 90px;
+    }
+    .status-activePlayer {
+        width: 65px;
+    }
+}
+
+@media (max-width: 383px) { 
+    .name-activePlayer {
+        width: 100px;
+    }
+    .btnInvite-activePlayer {
+        padding: 10px;
+    }
+}

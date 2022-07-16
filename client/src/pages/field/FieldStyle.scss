@@ -1,0 +1,83 @@
+.field-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 40px 60px;
+
+    height: calc(100vh - 56px);
+}
+
+.field-games {
+    align-self: stretch;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    height: 100%;
+}
+
+.field-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 100%; 
+    width: 100%; 
+}
+
+.one, .two {
+    margin: 50px 0 0;
+}
+
+.one {
+    flex: 1;
+}
+.two {
+    flex: 2;
+}
+.three {
+    flex: 1;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: stretch;
+}
+
+.motion {
+    background: #373745;
+    box-shadow: 0px 4px 20px rgba(44, 57, 121, 0.09);
+    border-radius: 12px;
+    padding: 10px 20px;
+    margin: 40px 0 0;
+    /* max-width: 450px; */
+    p {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.15px;
+        color: #FFFFFF;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            width: 26px;
+            height: 26px;
+            margin: 0 10px;
+        }
+        span {
+            word-break: break-word;
+        }
+    }
+}
+
+.clear-field {
+    p {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    margin: auto;
+}

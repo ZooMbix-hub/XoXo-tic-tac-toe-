@@ -1,0 +1,66 @@
+.modalWin-Active {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 100;
+}
+
+.modalWin-container {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(44, 57, 121, 0.09);
+    border-radius: 16px;
+    padding: 40px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    a {
+        width: 100%;
+    }
+}
+
+.name-win {
+    color: #373745;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;
+    margin: 20px 0;
+    word-break: break-word;
+}
+
+.btn-goNewGame,
+.btn-goMenu {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.24px;
+    border-radius: 12px;
+    padding: 12px;
+    width: 100%;
+    transition: all .2s ease-in-out;
+}
+
+.btn-goNewGame {
+    color: #FFFFFF;
+    background: #60C2AA;
+    margin-bottom: 12px;
+    &:hover {
+        background-color: #3BA189;
+    }
+}
+
+.btn-goMenu {
+    color: #373745;
+    background: #F7F7F7;
+    &:hover {
+        background-color: #DCDCDF;
+    }
+}

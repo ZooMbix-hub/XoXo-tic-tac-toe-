@@ -1,0 +1,52 @@
+@media (max-width: 1550px) {
+    .field-wrapper {
+        padding: 0px 40px 20px;
+    }
+    .one, .two {
+        margin: 25px 0 0;
+    }
+}
+
+@media (max-width: 1024px) {
+    .field-wrapper {
+        padding: 16px 12px 10px;
+    }
+    .field-games {
+        flex-direction: column;
+        align-items: center;
+    }
+    .one, .two {
+        margin: 0;
+    }
+
+    .three {
+        display: flex;
+        align-items: center;
+    }
+
+    .motion {
+        padding: 10px 20px;
+        margin: 0 0 24px;
+        /* width: 100%; */
+        min-width:  400px;
+
+        p {
+            font-size: 14px;
+            line-height:20px;
+            letter-spacing: 0.25px;
+        }
+    }
+}
+
+@media (max-width: 572px) {
+    .field-wrapper {
+        align-items: stretch;
+    }
+    .one, .two {
+        width: 100%;
+    }
+    .motion {
+        width: 100%;
+        min-width: auto;
+    }
+}

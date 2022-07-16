@@ -1,0 +1,25 @@
+@media (max-width: 572px) { 
+    .square {
+        position: relative;
+        box-sizing: border-box;
+        img {
+            width: auto;
+            height: 100%;
+        }
+    }
+    
+    .square::before {
+        content: '';
+        display: block;
+        padding-top: 100%;
+    }
+    
+    .square-content {
+        position: absolute;
+        top: 0; 
+        left: 0;
+        height: 100%;
+        width: 100%;
+        padding: 10px;
+    }
+}
