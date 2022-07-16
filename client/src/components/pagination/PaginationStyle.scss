@@ -1,0 +1,39 @@
+%pag-elem {
+    border-radius: 100%;
+    background-color: #60C2AA;
+    color: #FFFFFF;
+}
+
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+    p {
+        font-weight: 500;
+        margin: 0 1px;
+        padding: 5px 8px;
+    }
+}
+
+.pagination-btn, .page {
+    cursor: pointer;
+    
+    &:hover {
+        @extend %pag-elem;
+    }
+}
+
+.active-page {
+    @extend %pag-elem;
+}
+
+@media (max-width: 1024px) { 
+    .pagination-btn, .page {
+        cursor: pointer;
+        
+        &:hover {
+            background-color: none;
+        }
+    }
+}

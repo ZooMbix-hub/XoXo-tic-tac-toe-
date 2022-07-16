@@ -1,0 +1,105 @@
+@mixin font($size, $weight, $lHeight, $color) {
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $lHeight;
+    color: $color;
+}
+
+.modalAddFr-Active {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: none;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+  
+
+.modalAddFr-container {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(44, 57, 121, 0.09);
+    border-radius: 16px;
+    width: 400px;
+    padding: 24px 24px 40px;
+}
+
+.btn-close-modalAddFr {
+    float: right;
+    background: none;
+}
+
+.title-modalAddFr {
+    @include font(24px, 700, 150%, #373745);
+    text-align: center;
+    margin: 20px 0;
+}
+
+.form-addFr {
+    label {
+        @include font(16px, 500, 24px, #373745);
+        letter-spacing: 0.24px;
+    }
+    input {
+        margin-top: 8px;
+        width: 100%;
+    }
+}
+
+.age-gender-wrapper {
+    margin: 8px 0 12px;
+}
+
+.age-gender-container {
+    display: flex;
+}
+
+.age-block, .gender-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.age-block {
+    margin-right: 40px;
+    input {
+        width: 72px;
+    }
+    input[type="number"]::-webkit-outer-spin-button,
+    input[type="number"]::-webkit-inner-spin-button {
+        display: none;
+    }
+}
+
+.gender-block {
+
+}
+
+.gender-radio-bl {
+    margin-top: 8px;
+
+    label > input{ 
+        display: none;
+    }
+    
+    label > input + img{ 
+        width: 48px;
+        height: 48px;
+        cursor:pointer;
+        border: 1px solid #DCDCDF;
+        border-radius: 1000px;
+        transition: all .2s ease-in-out;
+        padding: 8px;
+        margin-right: 8px;
+        &:hover {
+            border: 1px solid #60C2AA;
+        }
+    }
+    
+    label > input:checked + img{
+        background: #60C2AA;
+    } 
+}

@@ -1,0 +1,98 @@
+
+@media (max-width: 1024px) { 
+    %span-style {
+        display: block;
+        width: 20px;
+        height: 2.5px;
+        background: #373745;
+        margin-bottom: 4.5px;
+        transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    }
+
+    .header {
+        padding: 16px 30px;
+        height: 53px;
+    }
+    
+    .btn-burger {
+        display: block;
+        transform-origin: 16px 11px;
+        outline: 0;
+        border: 0;
+        background: none;
+        z-index: 10;
+        span {
+            @extend %span-style;
+            &:last-child {
+                margin-bottom: 0px;
+            }
+        }
+    }
+
+    .active-burg {
+        z-index: 10;
+        background: none;
+
+        span {
+            @extend %span-style;
+            border-radius: 20px;
+        }
+
+        span:nth-of-type(1) {
+            transform: rotate(45deg) translate(8.5px, 6px);
+            width: 20px;
+        }
+
+        span:nth-of-type(2) {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        span:nth-of-type(3) {
+            transform: rotate(-45deg) translate(4px, -2px);
+            width: 20px;
+        }
+    }
+
+    .content-burger {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        display: block;
+        padding-top: 100px;
+        padding: 80px 32px 36px;
+        transform: translateY(-100%);
+        transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+        background: #FFFFFF;
+        box-shadow: 0px 2px 6px rgba(44, 57, 121, 0.1);
+        border-radius: 0px 0px 16px 16px;
+        z-index: 1;
+    }
+
+    .navigate-header {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+        li {
+            margin-right: 0px;
+        }
+    }
+
+    .nav-item {
+        font-size: 20px;
+        font-weight: 700;
+        z-index: 0;
+        display: flex;
+        align-items: center;
+    }
+
+
+    .logo-out {
+        margin-top: 18px;
+        font-weight: 400;
+        svg {
+            margin-left: 13px;
+        }
+    }
+}

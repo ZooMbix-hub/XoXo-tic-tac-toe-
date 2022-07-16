@@ -1,0 +1,38 @@
+.name-win {
+    color: #373745;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;
+    margin: 20px 0;
+    word-break: break-word;
+}
+
+.btn-goNewGame,
+.btn-goMenu {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.24px;
+    border-radius: 12px;
+    padding: 12px;
+    width: 100%;
+    transition: all .2s ease-in-out;
+}
+
+.btn-goNewGame {
+    color: #FFFFFF;
+    background: #60C2AA;
+    margin-bottom: 12px;
+    &:hover {
+        background-color: #3BA189;
+    }
+}
+
+.btn-goMenu {
+    color: #373745;
+    background: #F7F7F7;
+    &:hover {
+        background-color: #DCDCDF;
+    }
+}

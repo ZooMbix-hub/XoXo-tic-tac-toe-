@@ -1,0 +1,57 @@
+@mixin font($size, $weight, $lHeight, $lSpacing, $color) {
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $lHeight;
+    letter-spacing: $lSpacing;
+    color: $color;
+}
+
+.form-auth {
+    display: flex;
+    flex-direction: column;
+}
+
+.field-form {
+    margin-bottom: 12px;
+}
+
+.input-form {
+    @include font(16px, 400, 22px, 0.24px, #373745);
+
+    width: 352px;
+    background: #FFFFFF;
+    border: 1px solid #DCDCDF;
+    border-radius: 12px;
+    padding: 12px 20px;
+    transition: all .2s ease-in-out;
+    &:hover {
+        border: 1px solid #60C2AA;
+    }
+    &:focus {
+        border: 1px solid #3BA189;
+    }
+}
+
+.input-err {
+    border: 1px solid #E93E3E;
+}
+
+.input-form::-webkit-input-placeholder { color: #B1B1B7; }
+
+.btn-form {
+    @include font(16px, 500, 24px, 0.24px, #FFFFFF);
+    background: #60C2AA;
+    border-radius: 12px;
+    margin-top: 8px;
+    padding: 12px 0;
+    &:disabled {
+        background: rgba(96, 194, 170, 0.39);
+    }
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.error-form {
+    @include font(12px, 400, 16px, 0.25px, #E93E3E);
+}

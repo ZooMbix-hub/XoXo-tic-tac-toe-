@@ -1,0 +1,56 @@
+.rating {
+    padding: 60px 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.container-rating {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(44, 57, 121, 0.09);
+    border-radius: 40px;
+    width: 1026px;
+    padding: 32px;
+}
+
+.list-rating {
+    margin: 24px 0 0;
+}
+
+.player-rating {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: inset 0px -1px 0px #EEEFF5;
+    word-break: break-word;
+    padding: 12px 8px;
+    li {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.24px;
+    }
+    .coutWin-rating {
+        color: #69B849;
+    }
+    .coutLos-rating {
+        color: #E93E3E;
+    }
+}
+
+.player-rating-zero {
+    li, .coutWin-rating, .coutLos-rating {
+        font-weight: 500;
+        color: #373745;
+    }
+}
+
+.name-rating {
+    width: 440px;
+}
+
+.coutGames-rating, .coutWin-rating, .coutLos-rating {
+    width: 108px;
+}
+
+.procWin-rating {
+    width: 134px;
+}

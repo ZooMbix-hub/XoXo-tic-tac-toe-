@@ -1,0 +1,143 @@
+@mixin font($size, $weight, $lHeight, $lSpacing, $color) {
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $lHeight;
+    letter-spacing: $lSpacing;
+    color: $color;
+}
+
+.activePlayers {
+    padding: 60px 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.activePlayers-container {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(44, 57, 121, 0.09);
+    border-radius: 40px;
+    width: 781px;
+    padding: 32px;
+}
+
+.activePlayers-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.activePlayers-header-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    color: #373745;
+}
+
+.activePlayers-header-container {
+    display: flex;
+    p {
+        @include font(16px, 400, 24px, 0.24px, #373745);
+        margin-right: 8px;
+    }
+}
+
+.checbox-container {
+    display: flex;
+    align-items: center;
+}
+
+.activePlayer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    word-break: break-word;
+    padding: 12px 0;
+}
+
+.name-activePlayer {
+    @include font(16px, 400, 24px, 0.24px, #373745);
+    width: 360px;
+}
+
+.status-activePlayer {
+    @include font(16px, 400, 24px, 0.24px, #FFFFFF);
+    border-radius: 6px;
+    min-width: 100px;
+    text-align: center;
+    padding: 4px 12px;
+}
+
+.p-free {
+    background: #A8D37F;
+}
+.p-block {
+    background: #EC7777;
+}
+.p-play {
+    background: #87CAE8;
+}
+.p-out {
+    background: #EDEDED;
+    color: #373745;
+}
+
+.btnInvite-activePlayer {
+    min-width: 177px;
+    @include font(16px, 500, 24px, 0.24px, #FFFFFF);
+    background: #60C2AA;
+    border-radius: 12px;
+    padding: 12px 20px;
+    transition: all .2s ease-in-out;
+    &:hover {
+        background: #3BA189;
+    }
+    &:disabled {
+        background: #F7F7F7;
+        opacity: 0.3;
+        color: #373745;
+        cursor: default;
+    }
+}
+
+.checbox-container {
+    input[type=checkbox]{
+        height: 0;
+        width: 0;
+        visibility: hidden;
+    }
+      
+    label {
+        cursor: pointer;
+        text-indent: -9999px;
+        width: 33px;
+        height: 14px;
+        background: #DCDCDF;
+        display: block;
+        border-radius: 100px;
+        position: relative;
+    }
+      
+    label:after {
+        content: '';
+        position: absolute;
+        top: -3px;
+        left: 0px;
+        width: 20px;
+        height: 20px;
+        background: #F7F7F7;
+        border: 1px solid rgba(137, 137, 147, 0.2);
+        border-radius: 90px;
+        transition: 0.3s;
+    }
+      
+    input:checked + label {
+        background: #60c2aa90;
+    }
+    
+    input:checked + label:after {
+        left: calc(100% );
+        transform: translateX(-100%);
+        background: #3BA189;
+    }
+}

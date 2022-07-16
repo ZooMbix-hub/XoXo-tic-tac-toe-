@@ -1,0 +1,62 @@
+.square {
+    background: #FFFFFF;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    padding: 20px;
+
+    &:hover {
+        background: #F7F7F7;
+    }
+}
+.square-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+.winSquareX {
+    background: #CFEDE6;
+    &:hover {
+        background: #CFEDE6;
+    }
+}
+
+.winSquareO {
+    background: #F3BBD0;
+    &:hover {
+        background: #F3BBD0;
+    }
+}
+
+/*  */
+.square {
+    position: relative;
+    box-sizing: border-box;
+    img {
+        width: auto;
+        height: 100%;
+    }
+}
+
+.square::before {
+    content: '';
+    display: block;
+    padding-top: 100%;
+}
+
+.square-content {
+    position: absolute;
+    top: 0; 
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+}
